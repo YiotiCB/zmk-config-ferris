@@ -62,7 +62,7 @@
         //│          │          │          │          │  F11     │   │ F12      │          │          │          │          │
              &trans    &trans     &trans     &trans     &kp F11         &kp F12   &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &kp LSHIFT    &trans      &trans     &kp BSPC
+                                            &kp LSHIFT    &trans      &none     &kp BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -79,7 +79,7 @@
         //│ ESC      │  `       │ CMD      │   (      │  )       │   │  _       │  +       │  <       │  >       │ \        │
             &kp ESC    &kp GRAVE  &kp LGUI   &kp LPAR   &kp RPAR      &kp UNDER   &kp PLUS  &kp LT     &kp GT     &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &kp BSPC
+                                             &trans     &none         &trans     &kp BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -88,10 +88,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │PROFILE 0 │   │          │          │          │          │          │
-           &trans     &trans     &trans     &trans    &bt BT_SEL 0     &trans     &trans     &trans     &trans     &trans
+            &trans    &trans     &trans     &trans    &bt BT_SEL 0     &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │ CTRL     │ OPT      │ CMD      │PROFILE 1 │   │          │          │          │          │          │
-            &trans    &trans     &trans     &trans    &bt BT_SEL 1    &kp LEFT    &kp UP     &kp DOWN   &kp RIGHT  &trans
+            &none     &kp LALT   &kp LCTRL  &kp LGUI  &bt BT_SEL 1    &kp LEFT    &kp UP     &kp DOWN   &kp RIGHT  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
